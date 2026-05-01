@@ -1,19 +1,31 @@
-# Weather-app
-A simple weather application that fetches real-time data using the OpenWeather API.
+# Weather App 🌦
 
-🚀 Features
+A simple and responsive weather application that fetches real-time weather data using the OpenWeather API.
 
-- Real-time weather updates
-- Temperature and forecast display
-- Clean user interface
+## 🚀 Features
 
-🛠 Tech Used
+* Get real-time weather updates
+* Displays temperature and conditions
+* Clean and user-friendly interface
 
-- Python
-- OpenWeather API
+## 🛠 Tech Stack
 
-📚 What I Learned
+* JavaScript
+* HTML & CSS
+* OpenWeather API
 
-- API integration
-- Handling real-time data
-- Debugging and error handling
+## 📸 Preview
+
+(Screenshot from 2026-05-01 17-38-03.png)
+
+## 📚 What I Learned
+
+* How to work with APIs
+* Handling asynchronous data
+* Debugging and improving code logic
+
+## 🔗 Future Improvements
+
+* Add location-based weather
+* Improve UI design
+* Add error handling
