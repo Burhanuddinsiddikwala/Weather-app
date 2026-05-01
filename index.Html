@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <!-- Header -->
+            <h1 class="title">Weather</h1>
+            
+            <!-- Search Section -->
+            <div class="search-section">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    class="search-input" 
+                    placeholder="Search for a city..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="search-button">Search</button>
+            </div>
+
+            <!-- Weather Info Section -->
+            <div id="weatherContent" class="weather-content">
+                <!-- City Name -->
+                <h2 id="cityName" class="city-name">San Francisco</h2>
+
+                <!-- Temperature Display -->
+                <div class="temperature-section">
+                    <div class="weather-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="13" r="5"></circle>
+                            <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m10.12 10.12l1.42 1.42M1 13h2m18 0h2M4.22 19.78l1.42-1.42m10.12-10.12l1.42-1.42"></path>
+                        </svg>
+                    </div>
+                    <div class="temperature-text">
+                        <div id="temperature" class="temperature">72°F</div>
+                        <div id="description" class="description">Mostly Sunny</div>
+                    </div>
+                </div>
+
+                <!-- Weather Details -->
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9.59 4.59A2 2 0 1 1 8 8.98v10.04a2 2 0 1 1-3.95-1.49A2 2 0 0 1 5 15.02v-10.04a2 2 0 0 1 4.59-.59z"></path>
+                                <path d="M16 3.13a2 2 0 1 0 0 3.95v8.92a4 4 0 0 1-3.98 4-4 4 0 0 1 3.98-4V7.13a2 2 0 0 0 0-3.95z"></path>
+                            </svg>
+                        </div>
+                        <div class="detail-text">
+                            <div class="detail-label">Wind</div>
+                            <div id="windSpeed" class="detail-value">12 mph</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="detail-text">
+                            <div class="detail-label">Humidity</div>
+                            <div id="humidity" class="detail-value">65%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading State (Hidden by default) -->
+            <div id="loadingState" class="loading-state" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+
+            <!-- Error State (Hidden by default) -->
+            <div id="errorState" class="error-state" style="display: none;">
+                <p id="errorMessage">Unable to fetch weather data</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
